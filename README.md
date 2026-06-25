@@ -40,7 +40,7 @@ micro  ✕  VS Code aesthetics  ✕  LazyVim install UX
 > **Open PowerShell as Administrator**, then run:
 
 ```powershell
-irm https://raw.githubusercontent.com/you/lazymicro/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/ojaswi1234/lazymicro/main/install.ps1 | iex
 ```
 
 The script will automatically:
@@ -76,7 +76,7 @@ winget install BurntSushi.ripgrep.MSVC
 ### 🐧 Linux / macOS
 
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/you/lazymicro/main/install.sh)
+bash <(curl -sL https://raw.githubusercontent.com/ojaswi1234/lazymicro/main/install.sh)
 ```
 
 **Config location:** `~/.config/micro/`
@@ -256,12 +256,12 @@ Then set which servers to use in `settings.json` under `"lsp.server"`.
 
 **🪟 Windows:**
 ```powershell
-irm https://raw.githubusercontent.com/you/lazymicro/main/uninstall.ps1 | iex
+irm https://raw.githubusercontent.com/ojaswi1234/lazymicro/main/uninstall.ps1 | iex
 ```
 
 **🐧 Linux / macOS:**
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/you/lazymicro/main/uninstall.sh)
+bash <(curl -sL https://raw.githubusercontent.com/ojaswi1234/lazymicro/main/uninstall.sh)
 ```
 
 Both scripts offer to restore your previous config from the backup taken at install time.
