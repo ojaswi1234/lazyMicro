@@ -1,12 +1,12 @@
 # ============================================================
 #  LazyMicro — Windows 10/11 Installer (PowerShell)
 #  Run in an ADMIN PowerShell:
-#  irm https://raw.githubusercontent.com/you/lazymicro/main/install.ps1 | iex
+#  irm https://raw.githubusercontent.com/ojaswi1234/lazymicro/main/install.ps1 | iex
 # ============================================================
 
 $ErrorActionPreference = "Stop"
 
-$RawBase   = "https://raw.githubusercontent.com/you/lazymicro/main"
+$RawBase   = "https://raw.githubusercontent.com/ojaswi1234/lazymicro/main"
 $MicroCfg  = "$env:APPDATA\micro"
 $Backup    = "$env:APPDATA\micro.backup.$(Get-Date -Format 'yyyyMMdd_HHmmss')"
 
