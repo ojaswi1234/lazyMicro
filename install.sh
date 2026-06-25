@@ -2,14 +2,14 @@
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 #  LazyMicro Installer
 #  One-shot setup that turns micro into a VS Code–style terminal editor
-#  Usage: bash <(curl -sL https://raw.githubusercontent.com/you/lazymicro/main/install.sh)
+#  Usage: bash <(curl -sL https://raw.githubusercontent.com/ojaswi1234/lazymicro/main/install.sh)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 set -euo pipefail
 
 # ── Config ────────────────────────────────────────────────────────────────────
 REPO="https://github.com/you/lazymicro"
-RAW="https://raw.githubusercontent.com/you/lazymicro/main"
+RAW="https://raw.githubusercontent.com/ojaswi1234/lazymicro/main"
 MICRO_CFG="${XDG_CONFIG_HOME:-$HOME/.config}/micro"
 BACKUP="$HOME/.config/micro.backup.$(date +%Y%m%d_%H%M%S)"
 
