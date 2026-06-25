@@ -1,0 +1,58 @@
+{
+    "─── LazyMicro: VS Code-style config ─────────────────────────────────────": "",
+
+    "colorscheme":               "vscode-dark",
+
+    "─── Editor Look ─────────────────────────────────────────────────────────": "",
+    "ruler":                     true,
+    "scrollbar":                 true,
+    "statusline":                true,
+    "tabbar":                    true,
+    "hlsearch":                  true,
+    "diffgutter":                true,
+    "matchbrace":                true,
+    "cursorline":                true,
+    "keymenu":                   false,
+
+    "─── Indentation (4-space soft tabs, VS Code default) ───────────────────": "",
+    "tabsize":                   4,
+    "softtabs":                  true,
+    "autoindent":                true,
+    "smartpaste":                true,
+
+    "─── Editor Behaviour ────────────────────────────────────────────────────": "",
+    "wordwrap":                  false,
+    "mouse":                     true,
+    "rmtrailingws":              true,
+    "eofnewline":                true,
+    "backup":                    true,
+    "savecursor":                true,
+    "saveundo":                  true,
+    "autoclose":                 true,
+    "ftoptions":                 true,
+    "syntax":                    true,
+    "incsearch":                 true,
+    "ignorecase":                true,
+    "multiopen":                 "vsplit",
+
+    "─── Plugin: filemanager (VS Code sidebar) ───────────────────────────────": "",
+    "filemanager.openonstart":   true,
+    "filemanager.showdotfiles":  true,
+    "filemanager.compressparent": true,
+
+    "─── Plugin: lsp ─────────────────────────────────────────────────────────": "",
+    "lsp.server":                "typescript-language-server,pylsp,gopls,rust-analyzer,clangd",
+    "lsp.tabcompletion":         true,
+
+    "─── Plugin: autofmt ─────────────────────────────────────────────────────": "",
+    "autofmt.gofmt-flags":       "-s",
+
+    "─── Per-language overrides ──────────────────────────────────────────────": "",
+    "*.go":          { "tabsize": 4, "softtabs": false },
+    "*.py":          { "tabsize": 4, "softtabs": true  },
+    "*.js,*.ts,*.jsx,*.tsx": { "tabsize": 2, "softtabs": true },
+    "*.json":        { "tabsize": 2, "softtabs": true },
+    "*.yaml,*.yml":  { "tabsize": 2, "softtabs": true },
+    "*.html,*.css":  { "tabsize": 2, "softtabs": true },
+    "Makefile":      { "tabsize": 4, "softtabs": false }
+}
