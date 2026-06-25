@@ -1,1 +1,83 @@
+# VS Code Dark+ Theme for micro
+# Faithful port of Visual Studio Code's default dark theme
+# Part of LazyMicro — https://github.com/you/lazymicro
 
+# ── Base ──────────────────────────────────────────────────────────────────────
+color-link default                        "#d4d4d4,#1e1e1e"
+color-link cursor-line                    ",#282828"
+color-link color-column                   ",#282828"
+color-link selection                      ",#264f78"
+color-link search                         "#000000,#d7ba7d"
+color-link search-message                 "#ffffff,#007acc"
+color-link match-brace                    "bold #ffd700,#1e1e1e"
+
+# ── Line Numbers ──────────────────────────────────────────────────────────────
+color-link line-number                    "#4e4e4e,#1e1e1e"
+color-link current-line-number            "bold #c6c6c6,#252526"
+
+# ── Status / Tab Bars ─────────────────────────────────────────────────────────
+color-link statusline                     "#ffffff,#007acc"
+color-link statuslineNC                   "#cccccc,#3e3e42"
+color-link tabbar                         "#969696,#2d2d2d"
+color-link tabbarselect                   "bold #ffffff,#1e1e1e"
+
+# ── Syntax: Comments ──────────────────────────────────────────────────────────
+color-link comment                        "#6a9955"
+color-link comment.block                  "#6a9955"
+color-link comment.block.documentation    "italic #6a9955"
+
+# ── Syntax: Identifiers ───────────────────────────────────────────────────────
+color-link identifier                     "#9cdcfe"
+color-link identifier.class               "#4ec9b0"
+color-link identifier.macro               "#c586c0"
+
+# ── Syntax: Constants ─────────────────────────────────────────────────────────
+color-link constant                       "#4fc1ff"
+color-link constant.number                "#b5cea8"
+color-link constant.bool                  "#569cd6"
+color-link constant.string                "#ce9178"
+color-link constant.string.char           "#ce9178"
+color-link constant.specialChar           "#d7ba7d"
+
+# ── Syntax: Statements / Keywords ─────────────────────────────────────────────
+color-link statement                      "#569cd6"
+color-link statement.label                "#c8c8c8"
+
+# ── Syntax: Preprocessor ──────────────────────────────────────────────────────
+color-link preproc                        "#c586c0"
+color-link preproc.include                "#c586c0"
+color-link preproc.define                 "#c586c0"
+
+# ── Syntax: Types ─────────────────────────────────────────────────────────────
+color-link type                           "#4ec9b0"
+color-link type.extended                  "#4ec9b0"
+
+# ── Syntax: Functions & Specials ──────────────────────────────────────────────
+color-link function                       "#dcdcaa"
+color-link special                        "#ce9178"
+color-link special.key                    "#9cdcfe"
+color-link underlined                     "#3e94cf"
+
+# ── Diagnostics ───────────────────────────────────────────────────────────────
+color-link error                          "bold #f44747"
+color-link todo                           "bold #ff8c00,#1e1e1e"
+color-link gutter-error                   "#f44747"
+color-link gutter-warning                 "#cca700"
+
+# ── Diff Gutter ───────────────────────────────────────────────────────────────
+color-link diff-added                     "#587c0c"
+color-link diff-modified                  "#1b81a8"
+color-link diff-deleted                   "#94151b"
+color-link diff-added-highlight           "#2ea043,#1e1e1e"
+color-link diff-modified-highlight        "#1b81a8,#1e1e1e"
+color-link diff-deleted-highlight         "#f44747,#1e1e1e"
+
+# ── Autocomplete Popup ────────────────────────────────────────────────────────
+color-link autocomplete                   "#d4d4d4,#252526"
+color-link autocomplete-sug               "#d4d4d4,#2a2d2e"
+color-link autocomplete-top               "bold #ffffff,#007acc"
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+color-link indent-char                    "#404040"
+color-link scrollbar                      ",#424242"
+color-link scrollbar-thumb               ",#686868"
