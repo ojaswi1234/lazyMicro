@@ -22,18 +22,19 @@ end
 function init()
     -- Safety-bind keys that may not be covered by bindings.json
     -- (second arg `false` = don't override if already set)
-    config.TryBindKey("Ctrl-/",       "lua:comment.comment",     false)
-    config.TryBindKey("Alt-Up",       "MoveLinesUp",             false)
-    config.TryBindKey("Alt-Down",     "MoveLinesDown",           false)
-    config.TryBindKey("Ctrl-b",       "lua:filemanager.toggle",  false)
-    config.TryBindKey("Ctrl-p",       "lua:fzf.fzf",             false)
-    config.TryBindKey("Ctrl-Shift-p", "CommandMode",             false)
+    m_config.TryBindKey("Ctrl-/",       "lua:comment.comment",     false)
+    m_config.TryBindKey("Alt-Up",       "MoveLinesUp",             false)
+    m_config.TryBindKey("Alt-Down",     "MoveLinesDown",           false)
+    m_config.TryBindKey("Ctrl-b",       "lua:filemanager.toggle",  false)
+    m_config.TryBindKey("Ctrl-p",       "lua:fzf.fzf",             false)
+    m_config.TryBindKey("Ctrl-Shift-p", "CommandMode",             false)
 
     -- Custom commands exposed in the command bar (Ctrl+E / Ctrl+Shift+P)
-    config.MakeCommand("fmt",      formatFile,  config.NoComplete)
-    config.MakeCommand("trim",     trimSpaces,  config.NoComplete)
-    config.MakeCommand("explorer", toggleExplorer, config.NoComplete)
-    config.MakeCommand("reload",   reloadConfig, config.NoComplete)
+    m_config.MakeCommand("fmt",      formatFile,  m_config.NoComplete)
+    m_config.MakeCommand("trim",     trimSpaces,  m_config.NoComplete)
+    m_config.MakeCommand("explorer", toggleExplorer, m_config.NoComplete)
+    m_config.MakeCommand("reload",   reloadConfig, m_config.NoComplete)
+    m_config.MakeCommand("wc",       wordCount, m_config.NoComplete)
 
     info("LazyMicro ready — VS Code mode active. Press Ctrl+Shift+P for commands.")
 end
@@ -114,7 +115,7 @@ end
 -- ── Reload config without restarting (like VS Code's Developer: Reload Window) -
 
 function reloadConfig(bp)
-    config.ReloadConfig()
+    m_config.ReloadConfig()
     info("Config reloaded.")
 end
 
@@ -143,6 +144,5 @@ function wordCount(bp)
     end
     info(string.format("Words: %d  Lines: %d", total, buf:LinesNum()))
 end
-m_config.MakeCommand("wc", wordCount)
 
 -- ── End ──────────────────────────────────────────────────────────────────────
