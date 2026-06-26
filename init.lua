@@ -1,18 +1,20 @@
 -- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 --  LazyMicro · init.lua
 --  VS Code-style enhancements for the micro text editor
---  https://github.com/you/lazymicro
+--  https://github.com/ojaswi1234/lazymicro
 -- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 local micro   = import("micro")
-local config  = import("micro/config")
+local m_config  = import("micro/config")
 local shell   = import("micro/shell")
 local buffer  = import("micro/buffer")
 
 -- ── Helpers ──────────────────────────────────────────────────────────────────
 
 local function info(msg)
-    micro.InfoBar():Message("⚡ " .. msg)
+    if micro.InfoBar() ~= nil then
+        micro.InfoBar():Message("⚡ " .. msg)
+    end
 end
 
 -- ── init() – runs once at startup ────────────────────────────────────────────
@@ -141,6 +143,6 @@ function wordCount(bp)
     end
     info(string.format("Words: %d  Lines: %d", total, buf:LinesNum()))
 end
-config.MakeCommand("wc", wordCount, config.NoComplete)
+m_config.MakeCommand("wc", wordCount)
 
 -- ── End ──────────────────────────────────────────────────────────────────────
