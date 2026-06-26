@@ -76,7 +76,7 @@
     "Ctrl-Shift-Home":   "SelectToStartOfFile",
     "Ctrl-Shift-End":    "SelectToEndOfFile",
 
-    "# ── Jump to matching bracket (VS Code: Ctrl+Shift+\) ──────────────────────": "",
+    "# ── Jump to matching bracket (VS Code: Ctrl+Shift+\\) ──────────────────────": "",
     "Ctrl-Shift-m":      "JumpToMatchingBrace",
 
     "# ── Misc ─────────────────────────────────────────────────────────────────────": "",
