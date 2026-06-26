@@ -62,7 +62,7 @@
     "Ctrl-Space":        "lua:lsp.complete",
     "Shift-F1":          "lua:lsp.hover",
 
-    "# ── Split Panes (VS Code: Ctrl+\ and Ctrl+number) ──────────────────────────": "",
+    "# ── Split Panes (VS Code: Ctrl+\\ and Ctrl+number) ──────────────────────────": "",
     "Ctrl-\\":           "VSplit",
     "Ctrl-Shift-\\":     "HSplit",
     "Ctrl-k Ctrl-ArrowLeft":  "PreviousSplit",
